@@ -1,0 +1,24 @@
+{
+  "name": "loan-app",
+  "version": "1.0.0",
+  "description": "Loan Application in a Banking System - Software Testing Assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --coverage",
+    "test:e2e": "cypress open",
+    "test:e2e:headless": "cypress run",
+    "load-test": "artillery run artillery/load-test.yml"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "artillery": "^2.0.10",
+    "cypress": "^13.10.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

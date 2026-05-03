@@ -1,0 +1,31 @@
+### HTTP client test file for the loan application API
+### Use this file with the JetBrains HTTP Client or VS Code REST Client extension
+
+### 1. Get all loan applications
+GET {{baseUrl}}/api/loans
+Accept: application/json
+
+### 2. Get a single loan application by id
+GET {{baseUrl}}/api/loans/1
+Accept: application/json
+
+### 3. Create a new loan application
+POST {{baseUrl}}/api/loans
+Content-Type: application/json
+
+{
+  "applicant_name": "John Doe",
+  "loan_amount": 15000,
+  "interest_rate": 5.75
+}
+
+### 4. Update an existing loan application
+PUT {{baseUrl}}/api/loans/1
+Content-Type: application/json
+
+{
+  "status": "approved"
+}
+
+### 5. Delete a loan application
+DELETE {{baseUrl}}/api/loans/1
